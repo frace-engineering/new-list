@@ -18,13 +18,13 @@ table{
     margin:0 auto;
     width:100px;
 }
-#decrement{
+.decrement{
     display:flex;
     justify-content:space-between;
     height:17px;
 }
 p{
-    margin:3px;
+    margin:0px;
 }
 span{
     display:flex;

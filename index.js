@@ -16,18 +16,21 @@ btn.addEventListener("click", ()=>{
   const td = clone.querySelectorAll("td");
   const flip = td[1].querySelector("i");
   console.log(flip);
-  const addqty = td[1].querySelector("#up");
+  const addqty = td[1].querySelector(".up");
   const minusqty = td[1].querySelector(".down");
   const clickme = td[1].querySelector("p");
+
   minusqty.style.color="#f00";
   addqty.style.color="#0f0";
   addqty.addEventListener("click",()=>{
     clickme.textContent++;
+    td[3].textContent = clickme.textContent*td[2].textContent;
   })
-  minusqty.addEventListener('click', function(event){
+  minusqty.addEventListener('click', ()=>{
   if(clickme.textContent!=0){
     clickme.textContent--;
-    if(clickme.textContent=0){tbody.remove(td.lastChild);}
+    td[3].textContent = clickme.textContent*td[2].textContent;
+    // if(clickme.textContent=0){tbody.remove(td.lastChild);}
   }
 })
 
@@ -36,7 +39,7 @@ btn.addEventListener("click", ()=>{
   td[0].textContent = product.value;
   flip.textContent= quantity.value;
   td[2].textContent = price.value;
-  td[3].textContent = clickme.textContent*price.value;
+  td[3].textContent = price.value;
 
   //appending the product row to the product list.
   tbody.appendChild(clone);
