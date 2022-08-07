@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/d8ebe6d82c.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Sub-Total</th>
+             </tr>   
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"></td>
+                <td>Total</td>
+                <td id="total" style="text-decoration:underline; font-weight:800">9000</td>
+            </tr>
+            
+        </tfoot>
+    </table>
+
+    <template id="productrow">
+        <tr>
+            <td></td>
+            <td id="decrement"><p>1</p><span><i class="fas fa-angle-up"id= "up"></i><i class ="fas fa-angle-down down"></i><span></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </template>
+    <div class="input">
+    <input type="text" id="product"><input type="text" id="quantity"><input type="text" id="unit-price"><input type="text" id="sub-total">
+    <button id="add-btn">Add</button>
+    </div>
+</body>
+</html>
