@@ -36,7 +36,7 @@ const db = [
     id: 10, name: "Table salt", unitPrice: 515
   },
   {
-    id: 11, name: "Ogiri", unitPrice: 220
+    id: 11, name: "Ogiri", unitPrice: 20
   }
 ]
 
