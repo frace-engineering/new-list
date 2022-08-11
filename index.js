@@ -80,6 +80,8 @@ if(!product){
   td[0].style.paddingRight = "4px";
   total.style.textAlign = "center";
   total.style.color = "green";
+  total.style.fontStyle = "italic";
+  td[0].style.fontStyle = "italic";
   // console.log(product.value);
 
   productElement.value = "";
