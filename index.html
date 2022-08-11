@@ -20,33 +20,39 @@
              </tr>   
         </thead>
         <tbody>
-            <tr>
+            <!-- <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
-            </tr>
+                <td class="st"></td>
+            </tr> -->
         </tbody>
         <tfoot>
             <tr>
                 <td colspan="2"></td>
                 <td>Total</td>
-                <td id="total" style="text-decoration:underline; font-weight:800">9000</td>
+                <td id="total" style="text-decoration:underline; font-weight:800"></td>
             </tr>
             
         </tfoot>
     </table>
 
-    <template id="productrow">
+    <template class="productrow">
         <tr>
             <td></td>
-            <td class="decrement"><p>1</p><span><i class="fas fa-angle-up up"></i><i class ="fas fa-angle-down down"></i><span></td>
+            <td class="decrement">
+            <p>
+            </p>
+            <span>
+                <i class="fas fa-angle-up up"></i><i class ="fas fa-angle-down down"></i>
+            </span>
+            </td>
             <td></td>
-            <td></td>
+            <td class="st"></td>
         </tr>
     </template>
     <div class="input">
-    <input type="text" id="product"><input type="text" id="quantity"><input type="text" id="unit-price"><input type="text" id="sub-total">
+    <input type="text" id="product" placeholder="type 0 - 11 for product"><!--<input type="text" id="quantity"><input type="text" id="unit-price"><input type="text" id="sub-total"> -->
     <button id="add-btn">Add</button>
     </div>
 </body>

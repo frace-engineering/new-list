@@ -41,3 +41,7 @@ i {
     font-size:0.5em;
     border:0.8px solid black;
 }
+input::placeholder{
+    font-size: 0.56rem;
+    text-align: center;
+}
